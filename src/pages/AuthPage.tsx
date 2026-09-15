@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import { Store, User, ShoppingBag, Eye, EyeOff, ArrowRight, Sparkles, Cake, Package, Phone, MapPin, ImagePlus, X, Calendar } from "lucide-react";
-import newLogoImg from "@/imports/0d72255c-5f7a-9c92-b256-12eb6a4e2091.jpeg";
-import logoBakeflow from "@/imports/logobakeflow.jpeg";
+import newLogoImg from "@/imports/nuevologobakeflow.png";
+import logoBakeflow from "@/imports/logobakeflow.png";
 type Role = "customer" | "bakery" | "employee" | "admin";
 
 interface AuthPageProps {

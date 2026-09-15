@@ -1,4 +1,4 @@
-import logoSrc from "@/imports/logobakeflow.jpeg";
+import logoSrc from "@/imports/logobakeflow.png";
 
 interface Props {
   size?: number;
