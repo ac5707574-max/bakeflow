@@ -1,8 +1,7 @@
 import { useState, useRef } from "react";
 import { Store, User, ShoppingBag, Eye, EyeOff, ArrowRight, Sparkles, Cake, Package, Phone, MapPin, ImagePlus, X, Calendar } from "lucide-react";
-import Logo from "../components/Logo";
 import newLogoImg from "@/imports/0d72255c-5f7a-9c92-b256-12eb6a4e2091.jpeg";
-
+import logoBakeflow from "@/imports/logobakeflow.jpeg";
 type Role = "customer" | "bakery" | "employee" | "admin";
 
 interface AuthPageProps {
@@ -78,10 +77,14 @@ export default function AuthPage({ onLogin }: AuthPageProps) {
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-violet-400/30 rounded-full blur-2xl translate-y-1/3 -translate-x-1/3" />
         <div className="absolute top-1/2 left-1/2 w-48 h-48 bg-white/5 rounded-full blur-xl -translate-x-1/2 -translate-y-1/2" />
 
-        {/* Logo */}
+       {/* Logo */}
         <div className="relative flex items-center gap-3">
           <div className="ring-2 ring-white/30 rounded-2xl">
-            <Logo size={48} className="rounded-2xl" />
+            <img 
+              src={logoBakeflow} 
+              alt="Logo BakeFlow" 
+              className="w-12 h-12 rounded-2xl object-cover" 
+            />
           </div>
           <span className="font-display text-3xl font-bold text-white tracking-wide">BakeFlow</span>
         </div>
