@@ -130,18 +130,27 @@ export default function AuthPage({ onLogin }: AuthPageProps) {
       {/* ── RIGHT FORM PANEL ──────────────────────── */}
       <div className="flex-1 flex flex-col items-center justify-center p-6 bg-background bg-grid overflow-y-auto">
         {/* Mobile logo */}
-        <div className="md:hidden flex flex-col items-center mb-8">
-          <div className="animate-float mb-3 w-20 h-20 rounded-3xl shadow-lg overflow-hidden bg-white p-1">
-            <div className="w-full h-full rounded-2xl overflow-hidden">
-            <img
-             src={newLogoImg}
-             className="w-full h-full object-contain"
-            />
-        </div>
-          </div>
-          <h1 className="font-display text-3xl font-bold gradient-text">BakeFlow</h1>
-          <p className="text-muted-foreground text-sm mt-1 font-medium">La plataforma para pastelerías</p>
-        </div>
+       <div className="md:hidden flex flex-col items-center mb-8">
+       <div className="animate-float mb-3 w-20 h-20 rounded-3xl shadow-lg bg-white p-1">
+    
+        <div className="w-full h-full rounded-2xl overflow-hidden">
+        <img
+          src={newLogoImg}
+          alt="BakeFlow"
+          className="w-full h-full object-contain"
+        />
+      </div>
+
+    </div>
+
+    <h1 className="font-display text-3xl font-bold gradient-text">
+     BakeFlow
+    </h1>
+
+    <p className="text-muted-foreground text-sm mt-1 font-medium">
+      La plataforma para pastelerías
+   </p>
+  </div>
 
         <div className="w-full max-w-md">
           <div className="hidden md:block mb-8">
