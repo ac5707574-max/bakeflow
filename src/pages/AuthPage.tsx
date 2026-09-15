@@ -109,20 +109,16 @@ export default function AuthPage({ onLogin }: AuthPageProps) {
 
         {/* Floating BakeFlow logo illustration */}
         <div className="relative self-center animate-float">
-          <div className="w-44 h-44 bg-white/15 rounded-[2.5rem] flex items-center justify-center backdrop-blur-sm border border-white/20 overflow-hidden p-3">
-            <img
-            src={newLogoImg}
-            alt="BakeFlow"
-            style={{
-            width: "180px",
-            height: "180px",
-            objectFit: "contain",
-            display: "block",
-            }}
-            />
-          </div>
-          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-32 h-4 bg-black/15 blur-md rounded-full" />
-        </div>
+       <div className="w-44 h-44 bg-white/15 rounded-[2.5rem] flex items-center justify-center backdrop-blur-sm border border-white/20 p-3">
+       <img
+        src={newLogoImg}
+        alt="BakeFlow"
+        className="w-full h-full object-contain rounded-[1.5rem] block"
+        />
+      </div>
+
+      <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-32 h-4 bg-black/15 blur-md rounded-full" />
+      </div>
 
         <p className="relative text-white/40 text-xs text-center">© 2026 BakeFlow · Hecho con amor</p>
       </div>
@@ -134,12 +130,12 @@ export default function AuthPage({ onLogin }: AuthPageProps) {
        <div className="animate-float mb-3 w-20 h-20 rounded-3xl shadow-lg bg-white p-1">
     
         <div className="w-full h-full rounded-2xl overflow-hidden">
-        <img
-          src={newLogoImg}
-          alt="BakeFlow"
-          className="w-full h-full object-contain"
-        />
-      </div>
+       <img
+       src={newLogoImg}
+       alt="BakeFlow"
+       className="w-full h-full object-contain rounded-2xl block"
+       />
+       </div>
 
     </div>
 
