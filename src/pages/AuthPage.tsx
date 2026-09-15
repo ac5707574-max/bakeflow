@@ -80,11 +80,11 @@ export default function AuthPage({ onLogin }: AuthPageProps) {
        {/* Logo */}
         <div className="relative flex items-center gap-3">
           <div className="ring-2 ring-white/30 rounded-2xl">
-            <img 
+             <img 
               src={logoBakeflow} 
               alt="Logo BakeFlow" 
               className="w-12 h-12 rounded-2xl object-cover" 
-            />
+             />
           </div>
           <span className="font-display text-3xl font-bold text-white tracking-wide">BakeFlow</span>
         </div>
@@ -110,7 +110,16 @@ export default function AuthPage({ onLogin }: AuthPageProps) {
         {/* Floating BakeFlow logo illustration */}
         <div className="relative self-center animate-float">
           <div className="w-44 h-44 bg-white/15 rounded-[2.5rem] flex items-center justify-center backdrop-blur-sm border border-white/20 overflow-hidden p-3">
-            <img src={newLogoImg} alt="BakeFlow" className="w-full h-full object-contain drop-shadow-lg rounded-2xl" />
+            <img
+            src={newLogoImg}
+            alt="BakeFlow"
+            style={{
+            width: "180px",
+            height: "180px",
+            objectFit: "contain",
+            display: "block",
+            }}
+            />
           </div>
           <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-32 h-4 bg-black/15 blur-md rounded-full" />
         </div>
@@ -123,7 +132,11 @@ export default function AuthPage({ onLogin }: AuthPageProps) {
         {/* Mobile logo */}
         <div className="md:hidden flex flex-col items-center mb-8">
           <div className="animate-float mb-3 w-20 h-20 rounded-3xl shadow-lg overflow-hidden bg-white p-1">
-            <img src={newLogoImg} alt="BakeFlow" className="w-full h-full object-contain rounded-2xl" />
+            <img 
+            src={newLogoImg} 
+            alt="BakeFlow" 
+            className="w-full h-full object-contain drop-shadow-lg rounded-2xl" 
+            />
           </div>
           <h1 className="font-display text-3xl font-bold gradient-text">BakeFlow</h1>
           <p className="text-muted-foreground text-sm mt-1 font-medium">La plataforma para pastelerías</p>
